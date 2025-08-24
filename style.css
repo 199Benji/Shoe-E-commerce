@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+
+/* THE NAVIGATIO: SECTION ONE   */
+header{
+    background-color: #000000fd;
+    padding: 0px 40px;
+    margin-bottom: 500px;
+    border: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    gap: 30px;
+}
+
+header nav ul label{
+    color: white;
+    font-family: poppins;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    font-family: poppins;
+    font-weight: 500;
+
+}
+header nav ul li img{
+    filter: brightness(0) invert(1);
+    width: 20px ;
+}
+header nav ul li:first-child{
+    margin-right: auto;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+/* NAV MEDIA QUERY:  */
+@media(max-width:750px){
+    ul{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+header{
+    text-align: center;
+}
+    
+}
+/* THE HERO/HOME SECTION:2 */
+.Home{
+    padding: 10px 40px;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(Images/Hero-Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    gap: 50px;
+}
+
+.Home-text span{
+    color: white;
+    font-family: roboto;
+    letter-spacing: 4px;
+}
+
+.Home .Home-text h2{
+    color: white;
+    font-family: montserrat;
+    font-size: 45px;
+    text-shadow: 2px 2px 3px;
+    margin-bottom: 20px; 
+}
+.Home-text a{
+    border: 1px solid white;
+    padding: 10px;
+    color: #000000;
+    text-align: none;
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+/* MEDIA QUERY FOR HERO/HOME PAGE  */
+@media(max-width: 750px){
+.Home{
+    margin-top: 175px;
+    flex-direction: column-reverse;
+    padding: 40px 0px;
+}
+.Home-text{
+    text-align: center;
+    margin-top: -40px;
+}
+}
+/* THE FEATURED SECTION: 3 */
+
+.Feature{
+    text-align: center;
+    padding: 10px 40px;margin-bottom: 50px;
+
+}
+.Feature h2{
+    margin-top: 20px;
+    font-family: poppins;
+    color:rgb(5, 5, 82);
+;
+}
+.Featured{
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;    
+}
+.featured-items{
+    border: none;
+    width: 100%;
+    max-width: 270px;
+    height: 300px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 12px 20px rgba(0, 0, 0, 0.12);     
+}
+
+.Feature hr{
+    margin: 0px auto;
+    width: 80px;
+    border: 2px solid rgb(12, 12, 130);    
+}
+.featured-image{
+    background-color: rgba(206, 221, 221, 0.365);
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.featured-image img{
+     width: 120px;
+     opacity: 1;
+     transition: all .3s;
+
+}
+.featured-image img:hover{
+    opacity: 0.8;
+}
+.featured-items h3{
+    color: rgb(9, 9, 56);
+    font-size: 22px;
+    
+}
+.featured-items button{
+    padding: 10px;
+    border: none;
+    background-color: rgb(1, 1, 40);
+    color: white;
+    border-radius: 10px;
+    font-family: poppins;
+    transition: 0.3s;
+}
+.featured-items button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+
+/* THE ABOUT SECTION: 4 */
+.About{
+    padding: 20px 40px;
+    display: flex;
+    gap: 40px;
+    background: url(Images/About-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+.About .about-text{
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.about-text h2{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: poppins;
+    color: orange;
+
+}
+.About .about-text hr{
+    width: 80px;
+    border: 2px solid white;
+    margin-top: -32px;
+    
+}
+.About .about-text p{
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    font-family: roboto;
+
+}
+.about-image{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1), 0 12px 20px rgba(0, 0, 0, 1);
+    border-radius: 20px ;
+    border: 2px solid white;    
+
+}
+.about-image img{
+    width: 350px;
+    border-radius: 20px;
+}
+
+/* THE MEDIA QUERY FOR ABOUT  */
+@media(max-width: 820px){
+    .About{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+}
+/* THE CONTACT US SECTION: 5 */
+.contact{
+    text-align: center;
+}
+.contact h2{
+    font-family: poppins;
+    color: rgb(5, 5, 82);
+}
+.contact hr{
+    margin: 4px auto;
+    width: 80px;
+    border: 2px solid rgb(12, 12, 130);   
+}
+.Contact{
+    padding: 20px 40px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.Contact .contact-items{
+    border-right:1.5px solid rgb(2, 2, 48);    
+    width: 90%;
+    max-width: 370px;
+    height: 300px ;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 0px rgb(2, 2, 48) ;
+}
+.Contact .contact-items .insider{
+    margin-top: 30px;
+}
+.Contact .contact-items .fa-solid{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(12, 12, 130);
+}
+.Contact .contact-items h2{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.contact-items p{
+    margin-bottom: 15px;
+}
+.contact-items a{
+    text-decoration: none;
+    color: rgb(12, 12, 130);
+    font-weight: 600;
+    font-family: poppins;
+}
+/* MEDIA QUERY FOR CONTACT US */
+@media(max-width:820px){
+    .Contact{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+}
+
+.Contact .contact-items .insider{
+    margin-top: 0px;
+}
+.contact-items a:last-child{
+    font-size: 13px;
+
+}
+
+}
+
+/* THE FOOTER SECTION : FINAL  */
+.Footer{
+    background-color: #000000;
+    align-items: center;
+
+}
+footer{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.footer-items h2{
+    font-family: poppins;
+    color: #fff;
+    font-weight: 400;
+}
+.footer-items p{
+    color: #fff;
+}
+
+.footer-items img{
+    filter: brightness(0) invert(1);
+    width: 20px ;
+}
+
+.Footer footer li{
+    list-style: none;
+    color: #fff;
+
+}
+.Footer footer li a{
+    text-decoration: none;
+    color: #fff;
+}
+.Footer footer span{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    
+}
+footer .footer-items{
+    text-align: left; 
+    margin-top: 20px;
+   
+
+}
+.final{
+    text-align: center;
+    margin-top: 20px;
+}
+.final p{
+    color: #fff;
+}
+.final strong{
+    color: rgb(34, 34, 224);
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 50px 0px;    
+    gap: 10px;
+}
+.icons a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #000000;
+    transition: all .4s;
+}
+.icons a:hover{
+    color: #000000;
+    background-color: #fff;
+}
+/* THE FOOTER MEDIA :FINAL SECTION */
+@media(max-width: 820px){
+    footer{
+        display: block;
+        gap: 250px;
+        align-items: center;
+
+    }
+    footer .footer-items{
+        margin-top: 20px;
+    }
+    .final p{
+        font-size: 20px;
+    }
+}
